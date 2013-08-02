@@ -21,31 +21,41 @@
       </style>
    </head>
    <body>
-      <canvas id='myCanvas' height="300" width="300"></canvas>
-      <script>
-         var canvas = document.getElementById('myCanvas');
-         var context = canvas.getContext('2d');
-         // Aqui vai o script
-         context.fillStyle = 'rgb(255,255,0)';
-         context.beginPath();
-         context.arc(150, 150, 120, 0, Math.PI * 2, true);
-         context.fill();
-         context.strokeStyle = 'rgb(0,0,255)';
-         context.lineWidth = 5;
-         context.arc(150, 150, 120, 0, Math.PI * 2, true);
-         context.stroke();
-         context.beginPath();
-         context.arc(150, 150, 90, 0, Math.PI, false);
-         context.stroke();
+      <div data-role="page">
+         <div data-role="header">
+            <h1>teste</h1>
+         </div>
+         <div data-role="content">
+            <canvas id='myCanvas' height="300" width="300"></canvas>
+            <script>
+               var canvas = document.getElementById('myCanvas');
+               var context = canvas.getContext('2d');
+               // Aqui vai o script
+               context.fillStyle = 'rgb(255,255,0)';
+               context.beginPath();
+               context.arc(150, 150, 120, 0, Math.PI * 2, true);
+               context.fill();
+               context.strokeStyle = 'rgb(0,0,255)';
+               context.lineWidth = 5;
+               context.arc(150, 150, 120, 0, Math.PI * 2, true);
+               context.stroke();
+               context.beginPath();
+               context.arc(150, 150, 90, 0, Math.PI, false);
+               context.stroke();
 
-         context.fillStyle = 'rgb(0,0,255)';
-         context.beginPath();
-         context.arc(110, 110, 10, 0, Math.PI * 2, false);
-         context.fill();
+               context.fillStyle = 'rgb(0,0,255)';
+               context.beginPath();
+               context.arc(110, 110, 10, 0, Math.PI * 2, false);
+               context.fill();
 
-         context.beginPath();
-         context.arc(190, 110, 10, 0, Math.PI * 2, false);
-         context.fill(); 
-      </script>
+               context.beginPath();
+               context.arc(190, 110, 10, 0, Math.PI * 2, false);
+               context.fill(); 
+            </script>
+         </div>
+         <div data-role="footer">
+            <h3>Angelo</h3>
+         </div>
+      </div>
    </body> 
 </html>
