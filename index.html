@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Canvas 1</title>
+      <!-- Exemplo: http://elemarjr.net/2010/10/29/canvas1/ -->
+      <style>
+         canvas
+            { margin: 50px auto;
+              display: block;border: 1px solid #ccc;
+            }
+      </style>
+   </head>
+   <body>
+      <canvas id='myCanvas' height="300" width="300"></canvas>
+      <script>
+         var canvas = document.getElementById('myCanvas');
+         var context = canvas.getContext('2d');
+         // Aqui vai o script
+         context.fillStyle = 'rgb(255,255,0)';
+         context.beginPath();
+         context.arc(150, 150, 120, 0, Math.PI * 2, true);
+         context.fill();
+         context.strokeStyle = 'rgb(0,0,255)';
+         context.lineWidth = 5;
+         context.arc(150, 150, 120, 0, Math.PI * 2, true);
+         context.stroke();
+         context.beginPath();
+         context.arc(150, 150, 90, 0, Math.PI, false);
+         context.stroke();
+
+         context.fillStyle = 'rgb(0,0,255)';
+         context.beginPath();
+         context.arc(110, 110, 10, 0, Math.PI * 2, false);
+         context.fill();
+
+         context.beginPath();
+         context.arc(190, 110, 10, 0, Math.PI * 2, false);
+         context.fill(); 
+      </script>
+   </body> 
+</html>
